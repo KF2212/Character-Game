@@ -13,7 +13,7 @@ namespace JustASimpleGame
             this.Durability = 2;
             this.Intelligence = 3;
             this.Skill = 2;
-            this.Strength = 1;
+            this.Strength = 60;
             this.Luck = 1;
             this.Level = 18;
             this.HitPoints = 100;

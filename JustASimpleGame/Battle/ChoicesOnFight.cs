@@ -119,7 +119,7 @@ namespace JustASimpleGame
                         if (ifPossible == 1)
                         {
                             ifPossible = 1;
-                            FightOptionItem.Item(ref character);
+                            FightOptionItem.ItemMechanics(ref character, ref opponent, ifPossible);
                         }
                         else
                         {
