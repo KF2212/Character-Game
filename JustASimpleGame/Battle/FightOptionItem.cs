@@ -10,10 +10,10 @@ namespace JustASimpleGame.Battle
     {
         public static ICharacters Item(ref ICharacters character)
         { int i = 1;
-            Console.WriteLine("You have items:");
+            Console.WriteLine("Choose one of items below:");
             foreach (int item in character.Lista )
             {
-                Console.WriteLine(i+": "+item);
+                Console.WriteLine(i+": "+item+" HP");
                 i++;
             }
             Console.WriteLine("");
@@ -22,7 +22,6 @@ namespace JustASimpleGame.Battle
             {
                 character.HitPoints += character.Lista[Choice-1];
                 character.Lista.RemoveAt(Choice-1);
-                Console.WriteLine("no i nie masz");
             }
             else
             {

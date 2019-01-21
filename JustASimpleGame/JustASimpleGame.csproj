@@ -45,13 +45,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Battle\ChoicesOnFightOpponent.cs" />
-    <Compile Include="Battle\DFA.cs" />
+    <Compile Include="Battle\DefenseActionsOpponent.cs" />
     <Compile Include="Battle\FightOptionItem.cs" />
-    <Compile Include="Battle\FOA.cs" />
-    <Compile Include="Battle\OFA.cs" />
+    <Compile Include="Battle\FightOptionAttackOpponent.cs" />
+    <Compile Include="Battle\OffensiveActionsOpponent.cs" />
     <Compile Include="Battle\TIM.cs" />
     <Compile Include="Buildings\Arena.cs" />
+    <Compile Include="Buildings\ArmorSmith.cs" />
     <Compile Include="Buildings\ItemShop.cs" />
+    <Compile Include="Buildings\WeaponShop.cs" />
     <Compile Include="Characters\ChangeNumbersToPlus.cs" />
     <Compile Include="Characters\Archer.cs" />
     <Compile Include="Characters\ICharacters.cs" />
@@ -80,6 +82,9 @@
     <Compile Include="Characters\MoreOnChoices.cs" />
     <Compile Include="Characters\OpponentDragon.cs" />
     <Compile Include="Characters\OpponentRay.cs" />
+    <Compile Include="Tools\BackgroundColor.cs" />
+    <Compile Include="Tools\Ending.cs" />
+    <Compile Include="Tools\Graphics.cs" />
     <Compile Include="Tools\OnInputWork.cs" />
     <Compile Include="Characters\OpponentDracula.cs" />
     <Compile Include="Program.cs" />
@@ -89,6 +94,7 @@
     <Compile Include="BegginAndGameFinish\StartGame.cs" />
     <Compile Include="Items\Weapon.cs" />
     <Compile Include="Characters\Wizard.cs" />
+    <Compile Include="Tools\Starting.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

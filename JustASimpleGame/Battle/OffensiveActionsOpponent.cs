@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace JustASimpleGame.Battle
 {
-    class OFA
+    class OffensiveActionsOpponent
     {
         public static int StrengthAction(ICharacters opponent)
         {

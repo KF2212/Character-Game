@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace JustASimpleGame.Battle
 {
-    class DFA
+    class DefenseActionsOpponent
     {
        
             public static int ArmorAction(ICharacters character)
             {
-                //Random rand = new Random();
                 return character.HeldArmor;// * rand.Next(character.minScalar, character.maxScalar);
             }
 

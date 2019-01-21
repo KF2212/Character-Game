@@ -15,41 +15,35 @@ namespace JustASimpleGame
             {
                 BuildingMessages.BuldingMessage("Arena");
                 Arena.FightInArena(character,OnInputWork.ChoiceHandler());
-                //Wykonuj sie arena
-                }
+            }
             else if (CityMap.PositionX == 26 && CityMap.PositionY == 11)
             {
                 BuildingMessages.BuldingMessage("WeaponSmith");
-                //Wizard wizard = new Wizard();
+                Console.WriteLine("You have: " + character.Money + " money, " + character.Strength + " Strength!");
                 List<CreatingItems> buildingitems = new List<CreatingItems>();
                 buildingitems = ProductsInBuldings.GetWeaponsAvailable(character);
                 Console.WriteLine(ProductsInBuldings.ShowProductsAvailable(buildingitems, "Strength"));
                 BuildingPurchase.Buying(OnInputWork.MovingOnMapHandler(),character);
-                //Wykonuj sie WeaponSmith
+                WeaponShop.Weapon(character, buildingitems, OnInputWork.ChoiceHandler());
             }
             else if (CityMap.PositionX == 30 && CityMap.PositionY == 7)
             {
                 BuildingMessages.BuldingMessage("ArmorSmith");
+                Console.WriteLine("You have: " + character.Money + " money, " + character.Durability + " Durability!");
                 List<CreatingItems> buildingitems = new List<CreatingItems>();
                 buildingitems = ProductsInBuldings.GetArmorAvailable(character);
                 Console.WriteLine(ProductsInBuldings.ShowProductsAvailable(buildingitems, "Durability"));
-                OnInputWork.ChoiceHandler();
-                //Wykonuj sie ArmorSmith
+                ArmorSmith.Armor(character, buildingitems, OnInputWork.ChoiceHandler());
             }
             else if (CityMap.PositionX == 16 && CityMap.PositionY == 4)
             {
                 BuildingMessages.BuldingMessage("Shop");
-                Console.WriteLine("You have: " + character.Money + " money, " + character.Intelligence + "Intelligence!");
+                Console.WriteLine("You have: " + character.Money + " money, " + character.Strength + " Strength!");
                 List<CreatingItems> buildingitems = new List<CreatingItems>();
                 buildingitems = ProductsInBuldings.GetShopAvailable(character);
                 Console.WriteLine(ProductsInBuldings.ShowProductsAvailable(buildingitems, "Strength"));
                 ItemShop.Item(character, buildingitems, OnInputWork.ChoiceHandler());
             }
-            //BuildingMessages.BuldingMessage("Shop");
-            //Wizard wizard = new Wizard();
-            //List<BuildingItems> buildingitems = new List<BuildingItems>();
-            //buildingitems = ProductsInBuldings.GetShopAvailable(wizard);
-            //Console.WriteLine(ProductsInBuldings.ShowProductsAvailable(buildingitems, "Intelligence"));
         }
     }
 }

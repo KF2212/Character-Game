@@ -15,8 +15,9 @@ namespace JustASimpleGame
             
                 while (character.AmountOfAtributes > 0)
                 {
-                Again:
-                    Console.Clear();
+            Again:
+
+                Console.Clear();
                     Console.WriteLine("There are your atributes: ");
                     ChangeNumbersToPlus.Durability(character);
                     ChangeNumbersToPlus.Intelligence(character);

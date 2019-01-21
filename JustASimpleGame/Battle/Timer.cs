@@ -18,14 +18,12 @@ namespace JustASimpleGame
                     {
                         character.TimeForActions[0] = date.Minute;
                         character.TimeForActions[1] = date.Second+5;
-                        //Console.WriteLine(character.TimeForActions[1]);
-                        //Console.ReadKey();
                         break;
                     }
                 case "SPELL":
                     {
                         character.TimeForActions[2] = date.Minute;
-                        character.TimeForActions[3] = date.Second+5;
+                        character.TimeForActions[3] = date.Second+15;
                         break;
                     }
                 case "ITEMS":
@@ -44,12 +42,12 @@ namespace JustASimpleGame
                 if (characters.TimeForActions[1 + whatAction] < dateNow.Second)
                 {
                     ifPossible = 1;
-                    Console.WriteLine("ok");
+                    //Console.WriteLine("ok");
                 }
                 else
                 {
                     ifPossible = 0;
-                    Console.WriteLine("nie");
+                    //Console.WriteLine("nie");
                 }
             }
             else
@@ -57,17 +55,17 @@ namespace JustASimpleGame
                 if (characters.TimeForActions[0 + whatAction] < 60)
                 {
                     ifPossible = 1;
-                    Console.WriteLine("ok");
+                    //Console.WriteLine("ok");
                 }
                 else if (characters.TimeForActions[0 + whatAction] % 60 < dateNow.Second % 60)
                 {
                     ifPossible = 1;
-                    Console.WriteLine("ok");
+                    //Console.WriteLine("ok");
                 }
                 else
                 {
                     ifPossible = 0;
-                    Console.WriteLine("nie");
+                    //Console.WriteLine("nie");
                 }
             }
         }

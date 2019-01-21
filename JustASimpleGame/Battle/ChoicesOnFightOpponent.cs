@@ -73,7 +73,7 @@ namespace JustASimpleGame.Battle
                         if (ifPossible == 1)
                         {
                             ifPossible = 1;
-                            FOA.AttackMechanics(ref opponent, ref character, ifPossible);
+                            FightOptionAttackOpponent.AttackMechanics(ref opponent, ref character, ifPossible);
                         }
                         else
                         {
@@ -88,7 +88,7 @@ namespace JustASimpleGame.Battle
                         if (ifPossible == 1)
                         {
                             ifPossible = 1;
-                            FOA.SpellMechanics(ref opponent, ref character, ifPossible);
+                            FightOptionAttackOpponent.SpellMechanics(ref opponent, ref character, ifPossible);
                         }
                         else
                         {

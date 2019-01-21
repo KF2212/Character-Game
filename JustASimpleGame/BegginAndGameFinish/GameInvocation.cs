@@ -1,7 +1,9 @@
-﻿using System;
+﻿using JustASimpleGame.Tools;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace JustASimpleGame
@@ -24,26 +26,26 @@ namespace JustASimpleGame
                 case 1:
                     {
                         Console.Clear();
-                        CharacterData character = new CharacterData();
+                        ICharacters character = new CharacterData();
                         StartGame.CreatingCharacter(ref character);
-                        //Console.WriteLine("1");
                         break;
                     }
                 case 2:
                     {
-                        //Console.WriteLine("2");
-
+                        Graphics.ChangeGraphics();
                         break;
                     }
                 case 3:
                     {
-                        Console.WriteLine("Thanks for Playing!");
-                        //Console.WriteLine("3");
+                        Console.Clear();
+                        Ending.TheEnd();
                         break;
                     }
                 default:
                     {
                         Console.WriteLine("Select action from listed above!");
+                        Thread.Sleep(1000);
+                        GameInvocation.OptionsSelector();
                         break;
                     }
 

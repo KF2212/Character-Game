@@ -12,11 +12,10 @@ namespace JustASimpleGame
     {
         static void Main(string[] args)
         {
-            int origWidth=110;
-            int origHeight=20;
+           
+            Starting.StartTxt();
+            GameInvocation.OptionsSelector();
 
-            origWidth = Console.WindowWidth;
-            origHeight = Console.WindowHeight;
 
             //ICharacters characters = new Archer();
             //Console.WriteLine(characters.HitPoints);
@@ -32,7 +31,7 @@ namespace JustASimpleGame
             //ChoicesOnFight.FightChoices(ref characters, ref wizard, ifPossible);
             //Console.ReadKey();
             //GameInvocation.OptionsSelector();
-            ICharacters character = new Archer();
+            //ICharacters character = new Archer();
 
             //List<CreatingItems> buildingitems = new List<CreatingItems>();
             //buildingitems = ProductsInBuldings.GetWeaponsAvailable(character);
@@ -54,7 +53,7 @@ namespace JustASimpleGame
             //ThreeHeadedDragon drago = new ThreeHeadedDragon();
             //drago.Picture();
             //Console.ReadKey();
-            CityMap.ShowMap(character);
+            //CityMap.ShowMap(character);
         }
     }
 }

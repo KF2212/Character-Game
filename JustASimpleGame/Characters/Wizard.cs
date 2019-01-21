@@ -23,6 +23,8 @@ namespace JustASimpleGame
             this.MinDmgWeapon = 2;
             this.MaxDmgWeapon = 2;
             this.Lista = new List<int>();
+            this.AmountOfAtributes = 5;
+
 
 
 
