@@ -30,7 +30,6 @@ namespace JustASimpleGame
             else if (CityMap.PositionX == 30 && CityMap.PositionY == 7)
             {
                 BuildingMessages.BuldingMessage("ArmorSmith");
-                //Wizard wizard = new Wizard();
                 List<CreatingItems> buildingitems = new List<CreatingItems>();
                 buildingitems = ProductsInBuldings.GetArmorAvailable(character);
                 Console.WriteLine(ProductsInBuldings.ShowProductsAvailable(buildingitems, "Durability"));
