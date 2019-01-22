@@ -1,4 +1,4 @@
-# Character-Game\
+# Character-Game
 Our Game is called "Character Game" because it tells about two characters wchich will fight to each other.\
 It  use Object-Oriented Programming and the thread class wchich allow us to fight with opponent at the same time.
 To improve your character you can go to shops at the map and add some great things :) \
