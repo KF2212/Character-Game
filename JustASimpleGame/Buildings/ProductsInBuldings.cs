@@ -50,12 +50,6 @@ namespace JustASimpleGame
             items.Add(FourhtItem);
             return items;
         }
-            //public static List<BuildingItems> GetProductsAvailable(ICharacters character)
-            //{
-            //    List<BuildingItems> buildingitems = new List<BuildingItems>();
-            //    buildingitems=ProductsInBuldings.MakeItems(character);
-            //    return buildingitems;
-            //}
             public static string ShowProductsAvailable(List<CreatingItems> items, string requiredAttribute)
         {
             var report = new System.Text.StringBuilder();

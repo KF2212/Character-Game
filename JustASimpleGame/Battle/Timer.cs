@@ -42,12 +42,10 @@ namespace JustASimpleGame
                 if (characters.TimeForActions[1 + whatAction] < dateNow.Second)
                 {
                     ifPossible = 1;
-                    //Console.WriteLine("ok");
                 }
                 else
                 {
                     ifPossible = 0;
-                    //Console.WriteLine("nie");
                 }
             }
             else
@@ -55,17 +53,14 @@ namespace JustASimpleGame
                 if (characters.TimeForActions[0 + whatAction] < 60)
                 {
                     ifPossible = 1;
-                    //Console.WriteLine("ok");
                 }
                 else if (characters.TimeForActions[0 + whatAction] % 60 < dateNow.Second % 60)
                 {
                     ifPossible = 1;
-                    //Console.WriteLine("ok");
                 }
                 else
                 {
                     ifPossible = 0;
-                    //Console.WriteLine("nie");
                 }
             }
         }

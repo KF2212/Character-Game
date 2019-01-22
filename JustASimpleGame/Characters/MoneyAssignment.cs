@@ -25,7 +25,6 @@ namespace JustASimpleGame
             Console.WriteLine("\n\n\n\n\n\n\n\n\n\n\n\n\n");
             Console.SetCursorPosition((origWidth - s.Length) / 2, Console.CursorTop);
             Console.WriteLine(s);
-            //Console.WriteLine("You win: " + WinMoney+" money. Together you have: "+character.Money+" money!");
             Thread.Sleep(5000);
         }
     }

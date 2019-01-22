@@ -13,9 +13,7 @@ namespace JustASimpleGame
         public static int PositionX;
         public static int PositionY;
         private static int tempPositionX = 44;
-        //44
         private static int tempPositionY = 23;
-        //23
         private static int width;
         private static int height;
 
@@ -23,11 +21,7 @@ namespace JustASimpleGame
         public static void ShowMap(ICharacters character)
         {
             Console.Clear();
-            //int height;
-            //int width;
-            //Map.GenerateMap(out width, out height,out PositionX, out PositionY);
             string[,] GameMap = new string[width, height];
-            
             GameMap=CityMap.GenerateMap(out width,out height,out PositionX,out PositionY);
             for (int i = 0; i < height; i++)
             {
@@ -42,11 +36,7 @@ namespace JustASimpleGame
         public static void ShowMap(string choice, ICharacters character)
         {
             Console.Clear();
-            //int height;
-            //int width;
-            //Map.GenerateMap(out width, out height,out PositionX, out PositionY);
             string[,] GameMap = new string[width, height];
-
             GameMap = CityMap.GenerateMap(out width, out height, out PositionX, out PositionY);
             for (int i = 0; i < height; i++)
             {
@@ -104,11 +94,6 @@ namespace JustASimpleGame
             string[,] GameMap = new string[width, height];
             GameMap = CityMap.StartMap(width, height);
             GameMap = CityMap.LimitsOfMap(width, height, out PositionX, out PositionY, ref tempPositionX, ref tempPositionY);
-            //GameMap[width - 5, height - 2] = "X";
-            //Map.CalculatePosition(out PositionX, out PositionY,ref tempPositionX,ref tempPositionY);
-            //GameMap[width - 5, height - 2] = " ";
-            //GameMap[PositionX, PositionY] = "X";
-
             return GameMap;
         }
         private static string[,] StartMap(int width,int height)
@@ -116,9 +101,7 @@ namespace JustASimpleGame
             string[,] GameMap = new string[width, height];
             GameMap = CityMap.BlankArray(width, height);
             GameMap = CityMap.Rectangle(width, height, 0, 0, GameMap);
-            
             GameMap = CityMap.Building(width, height, 11, 5, 4, 2, "Shop","right", GameMap);
-            
             GameMap = CityMap.Building(width, height, 21, 5, 20, 2, "ArmorSmith","down", GameMap);
             GameMap = CityMap.Building(width, height, 21, 5, 4, 9, "WeaponSmith","right", GameMap);
             GameMap = CityMap.Building(width, height, 15, 10, 4, 14, "Arena","right", GameMap);
@@ -248,4 +231,3 @@ namespace JustASimpleGame
         }
     }
 }
-//PRZY WIDTH HEIGHT =0 SIE WYWALA

@@ -27,9 +27,6 @@ namespace JustASimpleGame.Buildings
 
                                     Console.WriteLine("You add to your items health! Now you can use it at attack.");
                                     Thread.Sleep(750);
-                                    //character.Lista.RemoveAt(0);
-                                    //Console.WriteLine(character.Lista[0]);  
-                                    //Console.WriteLine(character.Lista[0]);
                                     BuildingPurchase.Buying(OnInputWork.MovingOnMapHandler(), character);
                                 }
                                 else
@@ -63,12 +60,8 @@ namespace JustASimpleGame.Buildings
                                 {
                                     character.Money -= one.Price;
                                     character.ListOfItems.Add(one.Max);
-
                                     Console.WriteLine("You add to your items health! Now you can use it at attack.");
                                     Thread.Sleep(750);
-                                    //character.Lista.RemoveAt(0);
-                                    //Console.WriteLine(character.Lista[0]);  
-                                    //Console.WriteLine(character.Lista[0]);
                                     BuildingPurchase.Buying(OnInputWork.MovingOnMapHandler(), character);
                                 }
                                 else
@@ -101,9 +94,6 @@ namespace JustASimpleGame.Buildings
 
                                     Console.WriteLine("You add to your items health! Now you can use it at attack.");
                                     Thread.Sleep(750);
-                                    //character.Lista.RemoveAt(0);
-                                    //Console.WriteLine(character.Lista[0]);  
-                                    //Console.WriteLine(character.Lista[0]);
                                     BuildingPurchase.Buying(OnInputWork.MovingOnMapHandler(), character);
                                 }
                                 else
@@ -136,9 +126,6 @@ namespace JustASimpleGame.Buildings
 
                                     Console.WriteLine("You add to your items health! Now you can use it at attack.");
                                     Thread.Sleep(750);
-                                    //character.Lista.RemoveAt(0);
-                                    //Console.WriteLine(character.Lista[0]);  
-                                    //Console.WriteLine(character.Lista[0]);
                                     BuildingPurchase.Buying(OnInputWork.MovingOnMapHandler(), character);
                                 }
                                 else

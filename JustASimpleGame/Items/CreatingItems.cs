@@ -19,7 +19,7 @@ namespace JustASimpleGame
             int requiredLevel = character.Level;
             this.Required = requiredLevel * rand.Next(1, 4);
             this.RequiredLevel = requiredLevel;
-            this.Price = this.Required * 100 * rand.Next(80, 101) / 100;//Przykładowo randomowo to przecena 
+            this.Price = this.Required * 100 * rand.Next(80, 101) / 100;
             this.Min = this.Required * rand.Next(1, 4);
             this.Max = this.Required * rand.Next(4, 6);
         }
@@ -27,7 +27,7 @@ namespace JustASimpleGame
         {
             this.Required = requiredLevel * rand.Next(1, 4);
             this.RequiredLevel = requiredLevel;
-            this.Price = requiredLevel * 100 * rand.Next(80, 101) / 100;//Przykładowo randomowo to przecena 
+            this.Price = requiredLevel * 100 * rand.Next(80, 101) / 100;
             this.Min = this.Required * rand.Next(1, 4);
             this.Max = this.Required * rand.Next(4, 6);
         }

@@ -19,13 +19,10 @@ namespace JustASimpleGame
         int Money { get; set; }
         int Armor { get; set; }
         int Level { get; set; }
-        void AddingStatistics(CharacterData character);
         int Health();
         int[] TimeForActions { get; set; }
         int RequiredMoney { get; set; }
-
         void Picture();
-
         int HeldArmor { get; set; }
         int MinDmgWeapon { get; set; }
         int MaxDmgWeapon { get; set; }

@@ -10,7 +10,7 @@ namespace JustASimpleGame
     {
         public static int ArmorAction(ICharacters character)
         {
-            return character.HeldArmor;// * rand.Next(character.minScalar, character.maxScalar);
+            return character.HeldArmor;
         }
         public static int LuckAction(ICharacters character)
         {
