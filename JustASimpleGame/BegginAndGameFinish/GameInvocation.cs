@@ -45,6 +45,7 @@ namespace JustASimpleGame
                     {
                         Console.WriteLine("Select action from listed above!");
                         Thread.Sleep(1000);
+                        Console.Clear();
                         GameInvocation.OptionsSelector();
                         break;
                     }

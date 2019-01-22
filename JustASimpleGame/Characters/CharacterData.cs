@@ -51,7 +51,7 @@ namespace JustASimpleGame
         public int HeldArmor { get; set; }
         public int MinDmgWeapon { get; set; }
         public int MaxDmgWeapon { get; set; }
-        public List<int> Lista { get; set; }
+        public List<int> ListOfItems { get; set; }
         public virtual void Picture()
         {
             

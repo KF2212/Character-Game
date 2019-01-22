@@ -20,8 +20,6 @@ namespace JustASimpleGame.Characters
                 this.HeldArmor = 20;
                 this.MinDmgWeapon = 10;
                 this.MaxDmgWeapon = 40;
-                this.Lista = new List<int>();
-
         }
         public ThreeHeadedDragon(int level)
         {
@@ -33,7 +31,6 @@ namespace JustASimpleGame.Characters
             this.Level = 16;
             this.RequiredMoney = 2000;
             this.TimeForActions = new int[6];
-
         }
             public override void Picture()
             {   

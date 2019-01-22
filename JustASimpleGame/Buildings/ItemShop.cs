@@ -19,12 +19,12 @@ namespace JustASimpleGame.Buildings
                         CreatingItems one = buildingitems[0];
                         if (character.Strength >= one.RequiredLevel)
                         {
-                            if (character.Lista.Count < 4)
+                            if (character.ListOfItems.Count < 4)
                             {
                                 if (one.Price <= character.Money)
                                 {
                                     character.Money -= one.Price;
-                                    character.Lista.Add(one.Max);
+                                    character.ListOfItems.Add(one.Max);
 
                                     Console.WriteLine("You add to your items health! Now you can use it at attack.");
                                     Thread.Sleep(750);
@@ -58,12 +58,12 @@ namespace JustASimpleGame.Buildings
                         CreatingItems one = buildingitems[1];
                         if (character.Strength >= one.RequiredLevel)
                         {
-                            if (character.Lista.Count < 4)
+                            if (character.ListOfItems.Count < 4)
                             {
                                 if (one.Price <= character.Money)
                                 {
                                     character.Money -= one.Price;
-                                    character.Lista.Add(one.Max);
+                                    character.ListOfItems.Add(one.Max);
 
                                     Console.WriteLine("You add to your items health! Now you can use it at attack.");
                                     Thread.Sleep(750);
@@ -93,12 +93,12 @@ namespace JustASimpleGame.Buildings
                         CreatingItems one = buildingitems[2];
                         if (character.Strength >= one.RequiredLevel)
                         {
-                            if (character.Lista.Count < 4)
+                            if (character.ListOfItems.Count < 4)
                             {
                                 if (one.Price <= character.Money)
                                 {
                                     character.Money -= one.Price;
-                                    character.Lista.Add(one.Max);
+                                    character.ListOfItems.Add(one.Max);
 
                                     Console.WriteLine("You add to your items health! Now you can use it at attack.");
                                     Thread.Sleep(750);
@@ -128,12 +128,12 @@ namespace JustASimpleGame.Buildings
                         CreatingItems one = buildingitems[3];
                         if (character.Strength >= one.RequiredLevel)
                         {
-                            if (character.Lista.Count < 4)
+                            if (character.ListOfItems.Count < 4)
                             {
                                 if (one.Price <= character.Money)
                                 {
                                     character.Money -= one.Price;
-                                    character.Lista.Add(one.Max);
+                                    character.ListOfItems.Add(one.Max);
 
                                     Console.WriteLine("You add to your items health! Now you can use it at attack.");
                                     Thread.Sleep(750);

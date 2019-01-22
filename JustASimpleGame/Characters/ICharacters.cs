@@ -29,6 +29,6 @@ namespace JustASimpleGame
         int HeldArmor { get; set; }
         int MinDmgWeapon { get; set; }
         int MaxDmgWeapon { get; set; }
-        List<int> Lista { get; set; }
+        List<int> ListOfItems { get; set; }
     }
 }
