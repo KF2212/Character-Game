@@ -45,7 +45,7 @@ namespace JustASimpleGame
             }
             Console.WriteLine("\n");
             
-            if (character.HitPoints <= 80 || opponent.HitPoints <= 80)
+            if (character.HitPoints <= 0 || opponent.HitPoints <= 0)
             {
 
                 Arena.AfterFight(ref character,ref opponent);
@@ -56,12 +56,12 @@ namespace JustASimpleGame
             {
                 Console.WriteLine("Fast to do, to fight must rest!");
             }
-            if (character.HitPoints <= 80 || opponent.HitPoints <= 80)
-            {
+            //if (character.HitPoints <= 0 || opponent.HitPoints <= 0)
+            //{?????????????????????????????
 
-                Arena.FightLayout(character,opponent,false);
+            //    Arena.FightLayout(character,opponent,false);
 
-            }
+            //}
             int Choice;
             int.TryParse(Console.ReadLine(), out Choice);
             ChoicesOnFight.FightOptionsHandler(Choice,ref character,ref opponent,out ifPossible);

@@ -71,11 +71,11 @@ namespace JustASimpleGame
             Random rand = new Random();
             return rand.Next(0, (enemyCharacters + 1));
         }
-        public static void FightLayout(ICharacters character, ICharacters opponent,bool co)
+        public static void FightLayout(ICharacters character, ICharacters opponent,bool finish)
         {
 
             Console.Clear();
-            if (co == true)
+            if (finish == true)
             {
                 character.HitPoints = character.Health();
                 opponent.HitPoints = opponent.Health();

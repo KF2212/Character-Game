@@ -84,6 +84,7 @@
     <Compile Include="Characters\OpponentDragon.cs" />
     <Compile Include="Characters\OpponentRay.cs" />
     <Compile Include="Tools\BackgroundColor.cs" />
+    <Compile Include="Tools\DifficultyLevel.cs" />
     <Compile Include="Tools\Ending.cs" />
     <Compile Include="Tools\Graphics.cs" />
     <Compile Include="Tools\OnInputWork.cs" />
@@ -95,6 +96,7 @@
     <Compile Include="BegginAndGameFinish\StartGame.cs" />
     <Compile Include="Items\Weapon.cs" />
     <Compile Include="Characters\Wizard.cs" />
+    <Compile Include="Tools\Options.cs" />
     <Compile Include="Tools\Starting.cs" />
   </ItemGroup>
   <ItemGroup>

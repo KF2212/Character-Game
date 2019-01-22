@@ -27,7 +27,7 @@ namespace JustASimpleGame.Tools
                         Console.WriteLine("Ehh.. so now you can see how good is your computer :) ");
                         Thread.Sleep(3000);
                         Console.Clear();
-                        GameInvocation.OptionsSelector();
+                        Options.Changes();
                         break;
                     }
                 case 2:

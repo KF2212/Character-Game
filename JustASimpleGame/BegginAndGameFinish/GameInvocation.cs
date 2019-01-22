@@ -32,7 +32,7 @@ namespace JustASimpleGame
                     }
                 case 2:
                     {
-                        Graphics.ChangeGraphics();
+                        Options.Changes();
                         break;
                     }
                 case 3:

@@ -12,7 +12,7 @@ namespace JustASimpleGame.Battle
         public static void FightChoices(ref ICharacters opponent, ref ICharacters character, int ifPossible)
         {
            
-            if (character.HitPoints <= 80 || opponent.HitPoints <= 80)
+            if (character.HitPoints <= 0 || opponent.HitPoints <= 0)
             {
                 Arena.FightLayout(character, opponent, false);
             }
