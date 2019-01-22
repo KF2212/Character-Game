@@ -13,6 +13,10 @@ namespace JustASimpleGame
         public static void FightChoices(ref ICharacters character,ref ICharacters opponent,int ifPossible)
         {
             Console.Clear();
+            character.Picture();
+            Console.WriteLine("Character Hitpoints: " + character.HitPoints);
+            opponent.Picture();
+            Console.WriteLine("Opponent Hitpoints: " + opponent.HitPoints);
             var options = new Dictionary<string, Int32>
             {
                 ["Attack"] = 1,
@@ -40,10 +44,7 @@ namespace JustASimpleGame
                 Console.Write("=");
             }
             Console.WriteLine("\n");
-            character.Picture();
-            Console.WriteLine("Character Hitpoints: " + character.HitPoints);
-            opponent.Picture();
-            Console.WriteLine("Opponent Hitpoints: " + opponent.HitPoints);
+            
             if (character.HitPoints <= 80 || opponent.HitPoints <= 80)
             {
 
@@ -119,6 +120,7 @@ namespace JustASimpleGame
                 case 4:
                     {
                         ifPossible = 1;
+                        character.HitPoints = 0;
                         ChoicesOnFight.FightChoices(ref character, ref opponent, ifPossible);
                         break;
                     }

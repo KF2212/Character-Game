@@ -13,5 +13,10 @@ namespace JustASimpleGame.Battle
             Random rand = new Random();
             return opponent.Strength * rand.Next(opponent.MinDmgWeapon, opponent.MaxDmgWeapon);
         }
+        public static int IntelligenceAction(ICharacters opponent)
+        {
+            Random rand = new Random();
+            return opponent.Intelligence * rand.Next(3, 7);
+        }
     }
 }

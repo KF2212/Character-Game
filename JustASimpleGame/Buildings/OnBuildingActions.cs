@@ -41,7 +41,7 @@ namespace JustASimpleGame
                 Console.WriteLine("You have: " + character.Money + " money, " + character.Strength + " Strength!");
                 List<CreatingItems> buildingitems = new List<CreatingItems>();
                 buildingitems = ProductsInBuldings.GetShopAvailable(character);
-                Console.WriteLine(ProductsInBuldings.ShowProductsAvailable(buildingitems, "Strength"));
+                Console.WriteLine(ProductsInBuldings.ShowProductsAvailable(buildingitems, "Alchemics"));
                 ItemShop.Item(character, buildingitems, OnInputWork.ChoiceHandler());
             }
         }

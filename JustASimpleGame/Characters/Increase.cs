@@ -78,7 +78,7 @@ namespace JustASimpleGame
                                 Int32.TryParse(Console.ReadLine(), out NumberOfEnter4);
                                 if (NumberOfEnter4 <= character.AmountOfAtributes)
                                 {
-                                    character.Skill += NumberOfEnter4;
+                                    character.Alchemics += NumberOfEnter4;
                                 }
                                 else
                                 {

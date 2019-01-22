@@ -44,7 +44,7 @@ namespace JustASimpleGame.Battle
                 int AttackDealt;
                 int HitPointsDefender;
                 Random rand = new Random();
-                AttackDealt = OffensiveActionsOpponent.StrengthAction(opponent);
+                AttackDealt = OffensiveActionsOpponent.IntelligenceAction(opponent);
                 HitPointsDefender = character.HitPoints;
                 if (DefenseActionsOpponent.ArmorAction(character) > AttackDealt)
                 {
@@ -52,7 +52,7 @@ namespace JustASimpleGame.Battle
                 }
                 else
                 {
-                    character.HitPoints = HitPointsDefender - ((AttackDealt) - DefenseActionsOpponent.ArmorAction(character)) * DefenseActionsOpponent.LuckAction(character);
+                    character.HitPoints = HitPointsDefender - ((AttackDealt)* DefenseActionsOpponent.LuckAction(character));
                 }
                 return character;
             }

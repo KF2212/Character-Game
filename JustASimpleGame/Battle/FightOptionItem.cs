@@ -26,6 +26,7 @@ namespace JustASimpleGame.Battle
                 {
                     character.HitPoints += character.ListOfItems[Choice - 1];
                     character.ListOfItems.RemoveAt(Choice - 1);
+                    
                 }
                 else
                 {
@@ -43,7 +44,7 @@ namespace JustASimpleGame.Battle
         public static void ItemMechanics(ref ICharacters character, ref ICharacters opponent, int ifPossible)
         {
             FightOptionItem.Item(ref character);
-            Timer.SetTime(character, "ITEM");
+            Timer.SetTime(character, "ITEMS");
             ChoicesOnFight.FightChoices(ref character, ref opponent, ifPossible);
         }
     }

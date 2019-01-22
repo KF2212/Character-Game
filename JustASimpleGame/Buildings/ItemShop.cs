@@ -11,13 +11,12 @@ namespace JustASimpleGame.Buildings
     {
         public static void Item(ICharacters character, List<CreatingItems> buildingitems, int wynik)
         {
-            //int.TryParse(Console.ReadLine(), out wynik);
             switch (wynik)
             {
                 case 1:
                     {
                         CreatingItems one = buildingitems[0];
-                        if (character.Strength >= one.RequiredLevel)
+                        if (character.Alchemics >= one.RequiredLevel)
                         {
                             if (character.ListOfItems.Count < 4)
                             {
@@ -56,7 +55,7 @@ namespace JustASimpleGame.Buildings
                 case 2:
                     {
                         CreatingItems one = buildingitems[1];
-                        if (character.Strength >= one.RequiredLevel)
+                        if (character.Alchemics >= one.RequiredLevel)
                         {
                             if (character.ListOfItems.Count < 4)
                             {
@@ -91,7 +90,7 @@ namespace JustASimpleGame.Buildings
                 case 3:
                     {
                         CreatingItems one = buildingitems[2];
-                        if (character.Strength >= one.RequiredLevel)
+                        if (character.Alchemics >= one.RequiredLevel)
                         {
                             if (character.ListOfItems.Count < 4)
                             {
@@ -126,7 +125,7 @@ namespace JustASimpleGame.Buildings
                 case 4:
                     {
                         CreatingItems one = buildingitems[3];
-                        if (character.Strength >= one.RequiredLevel)
+                        if (character.Alchemics >= one.RequiredLevel)
                         {
                             if (character.ListOfItems.Count < 4)
                             {

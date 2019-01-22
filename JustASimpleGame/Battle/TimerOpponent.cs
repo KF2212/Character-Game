@@ -18,19 +18,19 @@ namespace JustASimpleGame.Battle
                 case "ATTACK":
                     {
                         opponent.TimeForActions[0] = date.Minute;
-                        opponent.TimeForActions[1] = date.Second + 5;
+                        opponent.TimeForActions[1] = date.Second + 2;
                         break;
                     }
                 case "SPELL":
                     {
                         opponent.TimeForActions[2] = date.Minute;
-                        opponent.TimeForActions[3] = date.Second + 15;
+                        opponent.TimeForActions[3] = date.Second + 4;
                         break;
                     }
                 case "ITEMS":
                     {
                         opponent.TimeForActions[4] = date.Minute;
-                        opponent.TimeForActions[5] = date.Second + 50;
+                        opponent.TimeForActions[5] = date.Second + 20;
                         break;
                     }
             }

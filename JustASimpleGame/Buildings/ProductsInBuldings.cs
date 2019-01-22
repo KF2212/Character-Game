@@ -66,7 +66,7 @@ namespace JustASimpleGame
             int i = 1;
             foreach (var item in buildingitems)
             {
-                if(requiredAttribute=="Intelligence" || requiredAttribute== "Durability")
+                if(requiredAttribute=="Alchemics" || requiredAttribute== "Durability")
                 {
                     report.AppendLine($"{i}.  │ {item.Required,-22}│{item.Price,-7}│{item.Max,-7}│");
                 }

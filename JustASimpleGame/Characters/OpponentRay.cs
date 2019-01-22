@@ -12,12 +12,14 @@ namespace JustASimpleGame
         {
             this.Durability = 2;
             this.Intelligence = 1;
-            this.Skill = 3;
+            this.Alchemics = 3;
             this.Strength = 4;
             this.Luck = 1;
             this.Level = 1;
             this.HitPoints = 100;
-            this.Money = 0;
+            this.HeldArmor = 3;
+            this.MinDmgWeapon = 1;
+            this.MaxDmgWeapon = 4;
             this.TimeForActions = new int[6];
 
         }
@@ -25,9 +27,12 @@ namespace JustASimpleGame
         {
             this.Durability = 2 + 2 * level;
             this.Intelligence = 1 + 1 * level;
-            this.Skill = 3 + 1 * level;
+            this.Alchemics = 3 + 1 * level;
             this.Strength = 4 + 3 * level;
             this.HitPoints = 100;
+            this.HeldArmor = 3 + 1 * level;
+            this.MinDmgWeapon = 1 + 2 * level;
+            this.MaxDmgWeapon = 4 + 2 * level;
             this.TimeForActions = new int[6];
         }
         public override void Picture()

@@ -85,6 +85,7 @@
     <Compile Include="Characters\OpponentRay.cs" />
     <Compile Include="Tools\BackgroundColor.cs" />
     <Compile Include="Tools\Ending.cs" />
+    <Compile Include="Tools\GoingMap.cs" />
     <Compile Include="Tools\Graphics.cs" />
     <Compile Include="Tools\OnInputWork.cs" />
     <Compile Include="Characters\OpponentDracula.cs" />

@@ -36,12 +36,12 @@ namespace JustASimpleGame
         {
 
             string wynik = "";
-            for (int i = 0; character.Skill > i; i++)
+            for (int i = 0; character.Alchemics > i; i++)
             {
                 wynik += '+';
             }
             wynik.Replace(Environment.NewLine, String.Empty);
-            Console.WriteLine("3.Skill" + "(" + character.Skill + ")" + wynik);
+            Console.WriteLine("3.Skill" + "(" + character.Alchemics + ")" + wynik);
 
         }
         public static void Strength(ICharacters character)

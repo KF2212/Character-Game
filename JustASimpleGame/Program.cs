@@ -14,7 +14,6 @@ namespace JustASimpleGame
         {
             Starting.StartTxt();
             GameInvocation.OptionsSelector();
-
         }
     }
 }

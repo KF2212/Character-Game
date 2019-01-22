@@ -12,16 +12,16 @@ namespace JustASimpleGame
         {
             this.Durability = 1;
             this.Intelligence = 3;
-            this.Skill = 4;
+            this.Alchemics = 4;
             this.Strength = 2;
             this.Luck = 1;
-            this.Level = 1;
+            this.Level = 16;
             this.HitPoints = 100;
-            this.Money = 200;
+            this.Money = 2100;
             this.TimeForActions = new int[6];
-            this.HeldArmor = 10;
-            this.MinDmgWeapon = 2;
-            this.MaxDmgWeapon = 2;
+            this.HeldArmor = 3;
+            this.MinDmgWeapon = 1;
+            this.MaxDmgWeapon = 4;
             this.ListOfItems = new List<int>();
             this.AmountOfAtributes = 5;
 

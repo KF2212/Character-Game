@@ -17,19 +17,19 @@ namespace JustASimpleGame
                 case "ATTACK":
                     {
                         character.TimeForActions[0] = date.Minute;
-                        character.TimeForActions[1] = date.Second+5;
+                        character.TimeForActions[1] = date.Second+2;
                         break;
                     }
                 case "SPELL":
                     {
                         character.TimeForActions[2] = date.Minute;
-                        character.TimeForActions[3] = date.Second+15;
+                        character.TimeForActions[3] = date.Second+4;
                         break;
                     }
                 case "ITEMS":
                     {
                         character.TimeForActions[4] = date.Minute;
-                        character.TimeForActions[5] = date.Second+30;
+                        character.TimeForActions[5] = date.Second+10;
                         break;
                     }
             }

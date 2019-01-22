@@ -11,7 +11,7 @@ namespace JustASimpleGame
         int Durability { get; set; }
         int Intelligence { get; set; }
         int Range { get; set; }
-        int Skill { get; set; }
+        int Alchemics { get; set; }
         int Strength { get; set; }
         int Luck { get; set; }
         int AmountOfAtributes { get; set; }
@@ -20,7 +20,7 @@ namespace JustASimpleGame
         int Armor { get; set; }
         int Level { get; set; }
         void AddingStatistics(CharacterData character);
-        void Health();
+        int Health();
         int[] TimeForActions { get; set; }
         int RequiredMoney { get; set; }
 

@@ -87,9 +87,9 @@ namespace JustASimpleGame
                         Console.WriteLine("Write how many atributes do you want to remove:");
                         int NumberOfEnter4;
                         Int32.TryParse(Console.ReadLine(), out NumberOfEnter4);
-                        if (NumberOfEnter4 <= character.Skill)
+                        if (NumberOfEnter4 <= character.Alchemics)
                         {
-                            character.Skill -= NumberOfEnter4;
+                            character.Alchemics -= NumberOfEnter4;
                         }
                         else
                         {

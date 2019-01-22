@@ -19,6 +19,7 @@ namespace JustASimpleGame
             Console.WriteLine("4.To get more information about them");
             Console.WriteLine("5.Back");
             int Choice = OnInputWork.ChoiceHandler();
+
             switch (Choice)
             {
                 case 1:
@@ -106,6 +107,11 @@ namespace JustASimpleGame
                     {
                         Console.Clear();
                         GameInvocation.OptionsSelector();
+                        break;
+                    }
+                default:
+                    {
+                        StartGame.CreatingCharacter(ref character);
                         break;
                     }
             }

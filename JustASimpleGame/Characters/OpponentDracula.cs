@@ -12,20 +12,26 @@ namespace JustASimpleGame
         {
             this.Durability = 3;
             this.Intelligence = 1;
-            this.Skill = 2;
+            this.Alchemics = 2;
             this.Strength = 4;
             this.Luck = 1;
             this.Level = 1;
             this.HitPoints = 100;
+            this.HeldArmor = 3;
+            this.MinDmgWeapon = 1;
+            this.MaxDmgWeapon = 4;
             this.TimeForActions = new int[6];
         }
         public OpponentDracula(int level)
         {
             this.Durability = 3+1*level;
             this.Intelligence = 1+3*level;
-            this.Skill = 2+1*level;
+            this.Alchemics = 2+1*level;
             this.Strength = 4+2*level;
             this.HitPoints = 100;
+            this.HeldArmor = 3+1*level;
+            this.MinDmgWeapon = 1+2*level;
+            this.MaxDmgWeapon = 4+2*level;
             this.TimeForActions = new int[6];
         }
         public override void Picture()
