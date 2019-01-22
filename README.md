@@ -11,4 +11,4 @@ Our Game consist of 7 main folders:
 4.Characters- In this class we define all of our characters and opponents. 
   There are also classes wich define another options wchich will appear in the game such as Increase Mode or Decrease Mode.
 5.Map- There is a map of our town.
-6.Tools- There are some classes wchich help us to clear our code.
+6.Tools- There are some classes wchich help us to clear our code
