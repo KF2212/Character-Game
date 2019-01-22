@@ -8,12 +8,10 @@ namespace JustASimpleGame.Battle
 {
     class DefenseActionsOpponent
     {
-       
             public static int ArmorAction(ICharacters character)
             {
                 return character.HeldArmor;// * rand.Next(character.minScalar, character.maxScalar);
             }
-
             public static int LuckAction(ICharacters character)
             {
                 Random rand = new Random();
@@ -23,8 +21,6 @@ namespace JustASimpleGame.Battle
                 }
                 else
                     return 1;
-
             }
-        
     }
 }

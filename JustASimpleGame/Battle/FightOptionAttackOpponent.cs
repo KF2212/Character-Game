@@ -29,13 +29,13 @@ namespace JustASimpleGame.Battle
             public static void AttackMechanics(ref ICharacters opponent, ref ICharacters character, int ifPossible)
             {
                 FightOptionAttackOpponent.Attack(ref character, ref opponent);
-                TIM.SetTime(opponent, "ATTACK");
+                TimerOpponent.SetTime(opponent, "ATTACK");
                 ChoicesOnFightOpponent.FightChoices(ref opponent, ref character, ifPossible);
             }
             public static void SpellMechanics(ref ICharacters opponent, ref ICharacters character, int ifPossible)
               {
                  FightOptionAttackOpponent.Spell(ref character, ref opponent);
-                 TIM.SetTime(opponent, "SPELL");
+                 TimerOpponent.SetTime(opponent, "SPELL");
                  ChoicesOnFightOpponent.FightChoices(ref opponent, ref character, ifPossible);
                  
               }

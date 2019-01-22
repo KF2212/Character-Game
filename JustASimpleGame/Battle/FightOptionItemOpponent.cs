@@ -29,7 +29,7 @@ namespace JustASimpleGame.Battle
         public static void ItemMechanics(ref ICharacters opponent, ref ICharacters character, int ifPossible)
         {
             FightOptionItemOpponent.Item(ref opponent,ref character);
-            TIM.SetTime(opponent, "ITEMS");
+            TimerOpponent.SetTime(opponent, "ITEMS");
             ChoicesOnFightOpponent.FightChoices(ref opponent, ref character, ifPossible);
 
         }

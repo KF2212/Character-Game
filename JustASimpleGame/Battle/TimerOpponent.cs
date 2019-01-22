@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace JustASimpleGame.Battle
 {
-    class TIM
+    class TimerOpponent
     {
         public static void SetTime(ICharacters opponent, string choice)
         {

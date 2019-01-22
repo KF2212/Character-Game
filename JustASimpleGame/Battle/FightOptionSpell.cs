@@ -13,7 +13,6 @@ namespace JustASimpleGame
             FightOptionSpell.Spell(ref character, ref opponent);
             Timer.SetTime(character, "SPELL");
             ChoicesOnFight.FightChoices(ref character, ref opponent, ifPossible);
-
         }
         public static ICharacters Spell(ref ICharacters character, ref ICharacters opponent)
         {
@@ -23,7 +22,6 @@ namespace JustASimpleGame
             AttackDealt = OffensiveActions.IntelligenceAction(character);
             HitPointsDefender = opponent.HitPoints;
             opponent.HitPoints = HitPointsDefender - (AttackDealt * DefenseActions.LuckAction(opponent));
-            //defender.HitPoints = HitPointsDefender;
             return opponent;
         }
     }

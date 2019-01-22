@@ -26,7 +26,6 @@ namespace JustASimpleGame.Battle
             else
             {
                 Console.WriteLine("Wrong number! Try again");
-                //FightOptionItem.Item(ref character);
             }
             return character;
         }

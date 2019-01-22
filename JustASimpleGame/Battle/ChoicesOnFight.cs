@@ -41,7 +41,6 @@ namespace JustASimpleGame
             }
             Console.WriteLine("\n");
             character.Picture();
-            Console.WriteLine(character.Money);
             Console.WriteLine("Character Hitpoints: " + character.HitPoints);
             opponent.Picture();
             Console.WriteLine("Opponent Hitpoints: " + opponent.HitPoints);

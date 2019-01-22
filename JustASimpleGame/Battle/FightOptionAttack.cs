@@ -24,7 +24,6 @@ namespace JustASimpleGame
             {
                 defender.HitPoints = HitPointsDefender - ((AttackDealt) - defender.HeldArmor * DefenseActions.LuckAction(defender));
             }
-            //defender.HitPoints = HitPointsDefender;
             return defender;
         }
         public static void AttackMechanics(ref ICharacters character, ref ICharacters opponent,int ifPossible)

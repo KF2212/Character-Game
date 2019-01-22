@@ -20,8 +20,8 @@ namespace JustASimpleGame
             ChangeNumbersToPlus.Strength(character);
             Console.WriteLine("Do you want to do Sometching else? You have: " + character.AmountOfAtributes + " atributes to allocate");
             Console.WriteLine("1.Decrease mode");
-            Console.WriteLine("2.Go to increase mode");
-            Console.WriteLine("3.GO TO ARENA");
+            Console.WriteLine("2.Increase mode");
+            Console.WriteLine("3.GO TO MAP");
             int choice = OnInputWork.ChoiceHandler();
             switch (choice)
             {

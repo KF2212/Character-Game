@@ -30,6 +30,8 @@ namespace JustASimpleGame
         }
         public override void Picture()
         {
+            Console.BackgroundColor = ConsoleColor.White;
+            Console.ForegroundColor = ConsoleColor.DarkBlue;
             Console.WriteLine("           _______");
             Console.WriteLine("          /       \\ ");
             Console.WriteLine("          | *  *  ||");
@@ -42,6 +44,8 @@ namespace JustASimpleGame
             Console.WriteLine("         |________|");
             Console.WriteLine("         |___|_|__|  ");
             Console.WriteLine("         |____|___|    ");
+            Console.BackgroundColor = ConsoleColor.White;
+            Console.ForegroundColor = ConsoleColor.Red;
         }
     }
 }

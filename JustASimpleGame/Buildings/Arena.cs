@@ -83,7 +83,6 @@ namespace JustASimpleGame
                 else
                 {
                     Arena.AfterFight(ref character, ref opponent);
-
                 }
             }
         }
@@ -97,8 +96,9 @@ namespace JustASimpleGame
                 myHero.AmountOfAtributes += 5;
                 Arena.OpponentStatsAfterFight(ref myHero,ref opponent);
                 MoneyAssignment.MoneyAfterFight(ref myHero);
-                Increase.Add(myHero);
-
+                Console.WriteLine("YOU WIN THE GAME. YOU ARE THE BEST! :D");
+                Thread.Sleep(5000);
+                Ending.TheEnd();
             }
             if (myHero.HitPoints <= 80)
             {

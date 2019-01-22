@@ -19,8 +19,6 @@ namespace JustASimpleGame
             character.Money += WinMoney;
             Console.WriteLine("You win: " + WinMoney+" money. Together you have: "+character.Money+" money!");
             Thread.Sleep(5000);
-
         }
-
     }
 }
