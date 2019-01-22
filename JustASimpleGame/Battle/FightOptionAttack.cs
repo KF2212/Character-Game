@@ -9,7 +9,7 @@ namespace JustASimpleGame
 {
     class FightOptionAttack
     {
-        public static ICharacters Attack(ref ICharacters attacker,ref ICharacters defender)
+        private static ICharacters Attack(ref ICharacters attacker,ref ICharacters defender)
         {
             int AttackDealt;
             int HitPointsDefender;

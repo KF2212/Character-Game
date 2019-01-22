@@ -8,7 +8,7 @@ namespace JustASimpleGame.Battle
 {
     class FightOptionItem
     {
-        public static ICharacters Item(ref ICharacters character)
+        private static ICharacters Item(ref ICharacters character)
         { int i = 1;
             Console.WriteLine("Choose one of items below:");
             foreach (int item in character.Lista )
@@ -32,8 +32,6 @@ namespace JustASimpleGame.Battle
         }
         public static void ItemMechanics(ref ICharacters character, ref ICharacters opponent, int ifPossible)
         {
-            Console.WriteLine("no i nie masz");
-
             FightOptionItem.Item(ref character);
             Timer.SetTime(character, "ITEM");
             ChoicesOnFight.FightChoices(ref character, ref opponent, ifPossible);

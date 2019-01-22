@@ -35,7 +35,6 @@ namespace JustASimpleGame
                 }
                 Console.Write("|\n");
             }
-            
             for (int i = 0; i < (27 * 2 + 2); i++)
             {
                 Console.Write("=");
@@ -46,16 +45,12 @@ namespace JustASimpleGame
             Console.WriteLine("Character Hitpoints: " + character.HitPoints);
             opponent.Picture();
             Console.WriteLine("Opponent Hitpoints: " + opponent.HitPoints);
-
             if (character.HitPoints <= 80 || opponent.HitPoints <= 80)
             {
 
                 Arena.AfterFight(ref character,ref opponent);
 
             }
-
-            
-
             Console.WriteLine();
             if (ifPossible == 0)
             {
@@ -67,15 +62,9 @@ namespace JustASimpleGame
                 Arena.FightLayout(character,opponent,false);
 
             }
-            //Console.WriteLine(opponent.HitPoints);
-            //Console.WriteLine(character.HitPoints);
-            //Console.WriteLine();
-            //int Choice = OnInputWork.ChoiceHandler();
             int Choice;
             int.TryParse(Console.ReadLine(), out Choice);
-
             ChoicesOnFight.FightOptionsHandler(Choice,ref character,ref opponent,out ifPossible);
-            
         }
 
         public static void FightOptionsHandler(int choice,ref ICharacters character,ref ICharacters opponent,out int ifPossible)

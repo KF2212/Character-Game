@@ -30,7 +30,7 @@ namespace JustASimpleGame.Battle
                 case "ITEMS":
                     {
                         opponent.TimeForActions[4] = date.Minute;
-                        opponent.TimeForActions[5] = date.Second + 30;
+                        opponent.TimeForActions[5] = date.Second + 50;
                         break;
                     }
             }

@@ -42,21 +42,10 @@ namespace JustASimpleGame.Battle
             //Console.WriteLine("\n");
             if (character.HitPoints <= 80 || opponent.HitPoints <= 80)
             {
-
                 Arena.FightLayout(character, opponent, false);
-
             }
-
-
-
-            //opponent.Picture();
-            //Console.WriteLine("Opponent Hitpoints: " + opponent.HitPoints);
-            //character.Picture();
-            //Console.WriteLine("Character Hitpoints: " + character.HitPoints);
-            //Console.WriteLine();
-            //Console.WriteLine("Choose your action: ");
             Random Rand0 = new Random();
-            int choice = Rand0.Next(1, 3);
+            int choice = Rand0.Next(1, 4);
             ChoicesOnFightOpponent.FightOptionsHandler(choice, ref opponent, ref character, out ifPossible);
 
         }
@@ -67,9 +56,7 @@ namespace JustASimpleGame.Battle
             {
                 case 1:
                     {
-                        // DateTime dateNow = new DateTime();
                         TIM.IfActionPossible(opponent, 0, out ifPossible);
-                        //Console.WriteLine(ifPossible);
                         if (ifPossible == 1)
                         {
                             ifPossible = 1;
@@ -97,27 +84,21 @@ namespace JustASimpleGame.Battle
                         }
                         break;
                     }
-                //case 3:
-                //    {
-                //        Timer.IfActionPossible(character, 1, out ifPossible);
-                //        if (ifPossible == 1)
-                //        {
-                //            ifPossible = 1;
-                //            FightOptionAttack.AttackMechanics(ref character, ref opponent, ifPossible);
-                //        }
-                //        else
-                //        {
-                //            ifPossible = 0;
-                //            ChoicesOnFight.FightChoices(ref character, ref opponent, ifPossible);
-                //        }
-                //        break;
-                //    }
-                //case 4:
-                //    {
-                //        ifPossible = 1;
-                //        ChoicesOnFight.FightChoices(ref character, ref opponent, ifPossible);
-                //        break;
-                //    }
+                case 3:
+                    {
+                        TIM.IfActionPossible(opponent, 4, out ifPossible);
+                        if (ifPossible == 1)
+                        {
+                            ifPossible = 1;
+                            FightOptionItemOpponent.ItemMechanics(ref opponent, ref character, ifPossible);
+                        }
+                        else
+                        {
+                            ifPossible = 0;
+                            ChoicesOnFightOpponent.FightChoices(ref opponent, ref character, ifPossible);
+                        }
+                        break;
+                    }
                 default:
                     {
                         ifPossible = 1;
@@ -126,6 +107,5 @@ namespace JustASimpleGame.Battle
                     }
             }
         }
-        //private 
     }
 }

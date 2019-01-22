@@ -48,6 +48,7 @@
     <Compile Include="Battle\DefenseActionsOpponent.cs" />
     <Compile Include="Battle\FightOptionItem.cs" />
     <Compile Include="Battle\FightOptionAttackOpponent.cs" />
+    <Compile Include="Battle\FightOptionItemOpponent.cs" />
     <Compile Include="Battle\OffensiveActionsOpponent.cs" />
     <Compile Include="Battle\TIM.cs" />
     <Compile Include="Buildings\Arena.cs" />
