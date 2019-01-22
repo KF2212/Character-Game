@@ -46,7 +46,7 @@ namespace JustASimpleGame
                 }
                 else
                 {
-                    Console.WriteLine("You are not allowed to enter there. You have to have the"+opponent.Level+" and "+opponent.RequiredMoney+" money");
+                    Console.WriteLine("You are not allowed to enter there. You have to have the "+opponent.Level+" and "+opponent.RequiredMoney+" money");
                     Thread.Sleep(2000);
                     CityMap.ShowMap(myHero);
                 }

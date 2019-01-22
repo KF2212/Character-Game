@@ -124,18 +124,16 @@ namespace JustASimpleGame
                 case 1:
                     {
                         Wizard wizard = new Wizard();
-                        Console.WriteLine("Wizard");
+                        Console.WriteLine("              WIZARD");
                         wizard.Picture();
                         ChangeNumbersToPlus.Durability(wizard);
                         ChangeNumbersToPlus.Intelligence(wizard);
                         ChangeNumbersToPlus.Skill(wizard);
                         ChangeNumbersToPlus.Strength(wizard);
-
                     upper:
-                        Console.WriteLine("1.Back");
                         int choice2 = OnInputWork.ChoiceHandler();
 
-                        if (choice2 == 1)
+                        if (choice2 == 4)
                         {
                             StartGame.HeroTypeInformation(character);
                         }
@@ -151,7 +149,7 @@ namespace JustASimpleGame
                 case 2:
                     {
                         Giant giant = new Giant();
-                        Console.WriteLine("Giant");
+                        Console.WriteLine("            GIANT");
                         giant.Picture();
                         ChangeNumbersToPlus.Durability(giant);
                         ChangeNumbersToPlus.Intelligence(giant);
@@ -161,10 +159,9 @@ namespace JustASimpleGame
                     upper:
 
 
-                        Console.WriteLine("1.Back");
                         int choice2 = OnInputWork.ChoiceHandler();
 
-                        if (choice2 == 1)
+                        if (choice2 == 4)
                         {
 
                             StartGame.HeroTypeInformation(character);
@@ -183,7 +180,7 @@ namespace JustASimpleGame
                 case 3:
                     {
                         Archer archer = new Archer();
-                        Console.WriteLine("Archer");
+                        Console.WriteLine("              ARCHER");
                         archer.Picture();
                         ChangeNumbersToPlus.Durability(archer);
                         ChangeNumbersToPlus.Intelligence(archer);
@@ -192,10 +189,9 @@ namespace JustASimpleGame
 
 
                     upper:
-                        Console.WriteLine("1.Back");
                         int choice2 = OnInputWork.ChoiceHandler();
 
-                        if (choice2 == 1)
+                        if (choice2 == 4)
                         {
                             StartGame.HeroTypeInformation(character);
                         }

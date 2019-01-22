@@ -34,8 +34,8 @@ namespace JustASimpleGame
             Console.ForegroundColor = ConsoleColor.DarkBlue;
             Console.WriteLine("           _______");
             Console.WriteLine("          /       \\ ");
-            Console.WriteLine("          | *  *  ||");
-            Console.WriteLine("          |  __   ||");
+            Console.WriteLine("          | *  *   |");
+            Console.WriteLine("          |  __    |");
             Console.WriteLine("     _____\\_______/____");
             Console.WriteLine("    /                  \\");
             Console.WriteLine("   /                    \\");

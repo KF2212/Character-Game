@@ -25,33 +25,17 @@ namespace JustASimpleGame.Tools
                     {
                         Console.Clear();
                         Console.WriteLine("Ehh.. so now you can see how good is your computer :) ");
-                        Console.WriteLine("1.Back");
-                    upper:
-                        int choice2 = OnInputWork.ChoiceHandler();
-
-                        if (choice2 == 1)
-                        {
-
-                            Graphics.ChangeGraphics();
-
-
-                        }
-                        else
-                        {
-                            Console.WriteLine("Write correct number!");
-                            Thread.Sleep(750);
-                            Console.Clear();
-                            goto upper;
-                        }
+                        Thread.Sleep(3000);
+                        Console.Clear();
+                        GameInvocation.OptionsSelector();
                         break;
-                        
                     }
                 case 2:
                     {
                         Console.Clear();
                         Console.WriteLine("This graphics is too advanced for your computer :(");
-                        Console.WriteLine("1.Back");
                     upper:
+                        Console.WriteLine("1.Back and set another graphics");
                         int choice2 = OnInputWork.ChoiceHandler();
 
                         if (choice2 == 1)
@@ -69,17 +53,13 @@ namespace JustASimpleGame.Tools
                             goto upper;
                         }
                         break;
-
-                       
-                        
-                       
                     }
                 case 3:
                     {
                         Console.Clear();
                         Console.WriteLine("Your Computer is too shity :(");
                     upper:
-                        Console.WriteLine("1.Back");
+                        Console.WriteLine("1.Back and set another graphics");
                         int choice2 = OnInputWork.ChoiceHandler();
 
                         if (choice2 == 1)
@@ -97,9 +77,6 @@ namespace JustASimpleGame.Tools
                             goto upper;
                         }
                         break;
-
-                        
-                        
                     }
                 case 4:
                     {
@@ -114,14 +91,8 @@ namespace JustASimpleGame.Tools
                         Thread.Sleep(750);
                         Console.Clear();
                         Graphics.ChangeGraphics();
-                      
                         break;
                     }
-
-
-
-
-
             }
         }
     }

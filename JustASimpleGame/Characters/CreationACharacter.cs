@@ -19,7 +19,7 @@ namespace JustASimpleGame
             Console.WriteLine("\n\n\n\n\n\n\n\n\n\n\n\n\n");
             Console.SetCursorPosition((origWidth - k.Length) / 2, Console.CursorTop);
             Console.WriteLine(k+"\n"+g);
-            Thread.Sleep(8000);
+            Console.ReadKey();
             Increase.Add(character);
         }
 

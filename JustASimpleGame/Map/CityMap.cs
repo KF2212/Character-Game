@@ -116,7 +116,9 @@ namespace JustASimpleGame
             string[,] GameMap = new string[width, height];
             GameMap = CityMap.BlankArray(width, height);
             GameMap = CityMap.Rectangle(width, height, 0, 0, GameMap);
+            
             GameMap = CityMap.Building(width, height, 11, 5, 4, 2, "Shop","right", GameMap);
+            
             GameMap = CityMap.Building(width, height, 21, 5, 20, 2, "ArmorSmith","down", GameMap);
             GameMap = CityMap.Building(width, height, 21, 5, 4, 9, "WeaponSmith","right", GameMap);
             GameMap = CityMap.Building(width, height, 15, 10, 4, 14, "Arena","right", GameMap);
@@ -169,6 +171,8 @@ namespace JustASimpleGame
         }
         private static string[,] Rectangle (int width,int height,int OffSetX,int OffSetY, string[,] rectangle)
         {
+            
+
             string[,] GameMap = new string[width, height];
             GameMap = rectangle;
             for (int i = 1; i < height - 1; i++)

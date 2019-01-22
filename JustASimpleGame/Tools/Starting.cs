@@ -15,7 +15,7 @@ public class Starting
         Console.WriteLine("\n\n\n\n\n\n\n\n\n\n\n\n\n");
         Console.SetCursorPosition((origWidth- s.Length) / 2, Console.CursorTop);
         Console.WriteLine(s);
-        Thread.Sleep(4000);
+        Console.ReadKey();
         Console.Clear();
     }
    
