@@ -10,14 +10,14 @@ namespace JustASimpleGame
     {
         public Giant()
         {
-            this.Durability = 4;
+            this.Durability = 3;
             this.Intelligence = 1;
-            this.Skill = 2;
-            this.Strength = 4;
+            this.Skill = 1;
+            this.Strength = 5;
             this.Luck = 1;
             this.Level = 1;
             this.HitPoints = 100;
-            this.Money = 0;
+            this.Money = 100;
             this.TimeForActions = new int[6];
             this.HeldArmor = 10;
             this.MinDmgWeapon = 2;

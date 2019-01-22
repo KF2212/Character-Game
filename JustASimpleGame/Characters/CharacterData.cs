@@ -33,8 +33,6 @@ namespace JustASimpleGame
         public int Level { get; set; }
         public int Armor { get; set; }
         public int[] TimeForActions { get; set; }
-        
-       
         public void AddingStatistics(CharacterData character)
         {
             Increase.Add(character);

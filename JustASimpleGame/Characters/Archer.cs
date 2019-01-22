@@ -10,14 +10,14 @@ namespace JustASimpleGame
     {
         public Archer()
         {
-            this.Durability = 2;
+            this.Durability = 1;
             this.Intelligence = 3;
-            this.Skill = 2;
-            this.Strength = 60;
+            this.Skill = 4;
+            this.Strength = 2;
             this.Luck = 1;
-            this.Level = 18;
+            this.Level = 1;
             this.HitPoints = 100;
-            this.Money = 5000;
+            this.Money = 200;
             this.TimeForActions = new int[6];
             this.HeldArmor = 10;
             this.MinDmgWeapon = 2;

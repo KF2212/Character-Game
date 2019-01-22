@@ -10,25 +10,25 @@ namespace JustASimpleGame.Characters
         {
             public ThreeHeadedDragon()
             {
-                this.Durability = 10;
-                this.Intelligence = 20;
-                this.Skill = 10;
-                this.Strength = 13;
+                this.Durability = 4;
+                this.Intelligence =1;
+                this.Skill = 1;
+                this.Strength =4;
                 this.Luck = 1;
                 this.HitPoints = 100;
                 this.TimeForActions = new int[6];
-                this.HeldArmor = 10;
+                this.HeldArmor = 20;
                 this.MinDmgWeapon = 10;
-                this.MaxDmgWeapon = 10;
+                this.MaxDmgWeapon = 40;
                 this.Lista = new List<int>();
 
         }
         public ThreeHeadedDragon(int level)
         {
-            this.Durability = 1 + 1 * level;
-            this.Intelligence = 1 + 3 * level;
-            this.Skill = 2;
-            this.Strength = 1 + 1 * level;
+            this.Durability = 4 + 2 * level;
+            this.Intelligence = 1 + 1 * level;
+            this.Skill = 1+1*level;
+            this.Strength = 4 + 3 * level;
             this.HitPoints = 100;
             this.Level = 16;
             this.RequiredMoney = 2000;

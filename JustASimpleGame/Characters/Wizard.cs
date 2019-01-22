@@ -12,22 +12,18 @@ namespace JustASimpleGame
         {
             this.Durability = 2;
             this.Intelligence = 4;
-            this.Skill = 2;
+            this.Skill = 3;
             this.Strength = 1;
             this.Luck = 1;
             this.Level = 1;
             this.HitPoints = 100;
-            this.Money = 0;
+            this.Money = 100;
             this.TimeForActions = new int[6];
             this.HeldArmor = 10;
             this.MinDmgWeapon = 2;
             this.MaxDmgWeapon = 2;
             this.Lista = new List<int>();
             this.AmountOfAtributes = 5;
-
-
-
-
         }
         public override void Picture()
         {

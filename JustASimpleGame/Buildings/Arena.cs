@@ -95,10 +95,7 @@ namespace JustASimpleGame
                 Console.WriteLine("YOU WIN with bossss!!! :)");
                 Thread.Sleep(2000);
                 myHero.AmountOfAtributes += 5;
-                opponent.HitPoints = 0;
-                myHero.HitPoints = 0;
-                myHero.HitPoints += 100;
-                opponent.HitPoints += 100;
+                Arena.OpponentStatsAfterFight(ref myHero,ref opponent);
                 MoneyAssignment.MoneyAfterFight(ref myHero);
                 Increase.Add(myHero);
 
@@ -107,13 +104,9 @@ namespace JustASimpleGame
             {
                 Console.WriteLine("YOU LOST :(");
                 Thread.Sleep(2000);
-                opponent.HitPoints = 0;
-                myHero.HitPoints = 0;
-                myHero.HitPoints += 100;
-                opponent.HitPoints += 100;
+                Arena.OpponentStatsAfterFight(ref myHero,ref opponent);
                 MoneyAfterDefeat.MoneyAfterFight(myHero);
                 CityMap.ShowMap(myHero);
-
             }
         }
         public static void AfterFight(ref ICharacters character,ref ICharacters opponent)
@@ -125,28 +118,34 @@ namespace JustASimpleGame
                 Console.WriteLine("YOU WIN!!! :)");
                 Thread.Sleep(2000);
                 character.AmountOfAtributes += 5;
-                opponent.HitPoints = 0;
-                character.HitPoints = 0;
-                character.HitPoints += 100;
-                opponent.HitPoints += 100;
+                Arena.CharacterStatsAfterFight(ref character,ref opponent);
                 MoneyAssignment.MoneyAfterFight(ref character);
                 Increase.Add(character);
-                
             }
             if (character.HitPoints <= 80)
             {
                 Console.WriteLine("YOU LOST!");
                 Thread.Sleep(2000);
+                Arena.CharacterStatsAfterFight(ref character, ref opponent);
+                MoneyAfterDefeat.MoneyAfterFight(character);
+                CityMap.ShowMap(character);
+            }
+
+        }
+        public static void CharacterStatsAfterFight(ref ICharacters character,ref ICharacters opponent)
+        {
                 opponent.HitPoints = 0;
                 character.HitPoints = 0;
                 character.HitPoints += 100;
                 opponent.HitPoints += 100;
-                MoneyAfterDefeat.MoneyAfterFight(character);
-                CityMap.ShowMap(character);
-                
-            }
-
         }
-        
+        public static void OpponentStatsAfterFight(ref ICharacters myHero, ref ICharacters opponent)
+        {
+            opponent.HitPoints = 0;
+            myHero.HitPoints = 0;
+            myHero.HitPoints += 100;
+            opponent.HitPoints += 100;
+        }
+
     }
 }

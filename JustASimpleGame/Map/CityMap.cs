@@ -236,6 +236,7 @@ namespace JustASimpleGame
         }
         private static void ShowWSAD()
         {
+            
             Console.WriteLine("To move use WSAD (for every move tap enter)");
             Console.WriteLine("  W");
             Console.WriteLine("A S D");
