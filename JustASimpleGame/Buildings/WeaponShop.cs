@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace JustASimpleGame.Buildings
@@ -23,6 +24,8 @@ namespace JustASimpleGame.Buildings
                                 character.MaxDmgWeapon += one.Max;
                                 character.MinDmgWeapon += one.Min;
                                 character.Money -= one.Price;
+                                Console.WriteLine("You have: "+character.Money+" money and your min. damage increase to: "+character.MinDmgWeapon+" and max to: "+character.MaxDmgWeapon);
+                                Thread.Sleep(750);
                                 BuildingPurchase.Buying(OnInputWork.MovingOnMapHandler(),character);
                             }
                             else
@@ -49,6 +52,8 @@ namespace JustASimpleGame.Buildings
                                 character.MaxDmgWeapon += one.Max;
                                 character.MinDmgWeapon += one.Min;
                                 character.Money -= one.Price;
+                                Console.WriteLine("You have: " + character.Money + " money and your min. damage increase to: " + character.MinDmgWeapon + " and max to: " + character.MaxDmgWeapon);
+                                Thread.Sleep(750);
                                 BuildingPurchase.Buying(OnInputWork.MovingOnMapHandler(), character);
                             }
                             else
@@ -76,6 +81,8 @@ namespace JustASimpleGame.Buildings
                                 character.MaxDmgWeapon += one.Max;
                                 character.MinDmgWeapon += one.Min;
                                 character.Money -= one.Price;
+                                Console.WriteLine("You have: " + character.Money + " money and your min. damage increase to: " + character.MinDmgWeapon + " and max to: " + character.MaxDmgWeapon);
+                                Thread.Sleep(750);
                                 BuildingPurchase.Buying(OnInputWork.MovingOnMapHandler(), character);
                             }
                             else
@@ -103,6 +110,8 @@ namespace JustASimpleGame.Buildings
                                 character.MaxDmgWeapon += one.Max;
                                 character.MinDmgWeapon += one.Min;
                                 character.Money -= one.Price;
+                                Console.WriteLine("You have: " + character.Money + " money and your min. damage increase to: " + character.MinDmgWeapon + " and max to: " + character.MaxDmgWeapon);
+                                Thread.Sleep(750);
                                 BuildingPurchase.Buying(OnInputWork.MovingOnMapHandler(), character);
                             }
                             else

@@ -23,7 +23,6 @@ namespace JustASimpleGame
                 List<CreatingItems> buildingitems = new List<CreatingItems>();
                 buildingitems = ProductsInBuldings.GetWeaponsAvailable(character);
                 Console.WriteLine(ProductsInBuldings.ShowProductsAvailable(buildingitems, "Strength"));
-                BuildingPurchase.Buying(OnInputWork.MovingOnMapHandler(),character);
                 WeaponShop.Weapon(character, buildingitems, OnInputWork.ChoiceHandler());
             }
             else if (CityMap.PositionX == 30 && CityMap.PositionY == 7)
@@ -38,7 +37,7 @@ namespace JustASimpleGame
             else if (CityMap.PositionX == 16 && CityMap.PositionY == 4)
             {
                 BuildingMessages.BuldingMessage("Shop");
-                Console.WriteLine("You have: " + character.Money + " money, " + character.Strength + " Strength!");
+                Console.WriteLine("You have: " + character.Money + " money, " + character.Alchemics + " Alchemics!");
                 List<CreatingItems> buildingitems = new List<CreatingItems>();
                 buildingitems = ProductsInBuldings.GetShopAvailable(character);
                 Console.WriteLine(ProductsInBuldings.ShowProductsAvailable(buildingitems, "Alchemics"));

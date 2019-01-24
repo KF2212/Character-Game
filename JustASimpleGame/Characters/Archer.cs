@@ -15,9 +15,9 @@ namespace JustASimpleGame
             this.Alchemics = 4;
             this.Strength = 2;
             this.Luck = 1;
-            this.Level = 16;
+            this.Level = 1;
             this.HitPoints = 100;
-            this.Money = 2100;
+            this.Money = 200;
             this.TimeForActions = new int[6];
             this.HeldArmor = 3;
             this.MinDmgWeapon = 1;

@@ -87,6 +87,7 @@
     <Compile Include="Tools\DifficultyLevel.cs" />
     <Compile Include="Tools\Ending.cs" />
     <Compile Include="Tools\Graphics.cs" />
+    <Compile Include="Tools\MoveOnMap.cs" />
     <Compile Include="Tools\OnInputWork.cs" />
     <Compile Include="Characters\OpponentDracula.cs" />
     <Compile Include="Program.cs" />

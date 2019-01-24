@@ -17,7 +17,7 @@ namespace JustASimpleGame
             this.Luck = 1;
             this.Level = 1;
             this.HitPoints = 100;
-            this.Money = 2000;
+            this.Money = 200;
             this.TimeForActions = new int[6];
             this.HeldArmor = 3;
             this.MinDmgWeapon = 1;

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace JustASimpleGame.Buildings
@@ -21,6 +22,8 @@ namespace JustASimpleGame.Buildings
                             {
                                 character.HeldArmor+= one.Max;
                                 character.Money -= one.Price;
+                                Console.WriteLine("You have: " + character.Money + " money and your armour increase to: " + character.Armor );
+                                Thread.Sleep(750);
                                 BuildingPurchase.Buying(OnInputWork.MovingOnMapHandler(), character);
                             }
                             else
@@ -46,6 +49,8 @@ namespace JustASimpleGame.Buildings
                             {
                                 character.HeldArmor += one.Max;
                                 character.Money -= one.Price;
+                                Console.WriteLine("You have: " + character.Money + " money and your armour increase to: " + character.Armor);
+                                Thread.Sleep(750);
                                 BuildingPurchase.Buying(OnInputWork.MovingOnMapHandler(), character);
                             }
                             else
@@ -70,6 +75,8 @@ namespace JustASimpleGame.Buildings
                             {
                                 character.HeldArmor += one.Max;
                                 character.Money -= one.Price;
+                                Console.WriteLine("You have: " + character.Money + " money and your armour increase to: " + character.Armor);
+                                Thread.Sleep(750);
                                 BuildingPurchase.Buying(OnInputWork.MovingOnMapHandler(), character);
                             }
                             else
@@ -94,6 +101,8 @@ namespace JustASimpleGame.Buildings
                             {
                                 character.HeldArmor += one.Max;
                                 character.Money -= one.Price;
+                                Console.WriteLine("You have: " + character.Money + " money and your armour increase to: " + character.Armor);
+                                Thread.Sleep(750);
                                 BuildingPurchase.Buying(OnInputWork.MovingOnMapHandler(), character);
                             }
                             else
