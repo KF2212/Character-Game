@@ -16,13 +16,16 @@ namespace JustASimpleGame
             Random rand = new Random();
             AttackDealt = OffensiveActions.StrengthAction(attacker);
             HitPointsDefender = defender.HitPoints;
-            if(defender.HeldArmor> AttackDealt)
+            int damage = (AttackDealt) - defender.HeldArmor * DefenseActions.LuckAction(defender);
+            if (defender.HeldArmor> AttackDealt)
             {
                 defender.HitPoints = HitPointsDefender - 5;
+                Console.WriteLine("You take him: 5 damage!");
             }
             else
             {
-                defender.HitPoints = HitPointsDefender - ((AttackDealt) - defender.HeldArmor * DefenseActions.LuckAction(defender));
+                defender.HitPoints = HitPointsDefender - damage;
+                Console.WriteLine("You take him:" + damage+"damage");
             }
             return defender;
         }

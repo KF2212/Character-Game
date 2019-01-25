@@ -21,7 +21,9 @@ namespace JustASimpleGame
             Random rand = new Random();
             AttackDealt = OffensiveActions.IntelligenceAction(character);
             HitPointsDefender = opponent.HitPoints;
-            opponent.HitPoints = HitPointsDefender - (AttackDealt * DefenseActions.LuckAction(opponent));
+            int damage = AttackDealt * DefenseActions.LuckAction(opponent);
+            opponent.HitPoints = HitPointsDefender - damage;
+            Console.WriteLine("You take him:"+damage);
             return opponent;
         }
     }
